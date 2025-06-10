@@ -213,6 +213,7 @@ span.b2 {
 
  <div class="container"> </div>
  <button id="Next" class="button" onclick="Rajzol()">READY!</button>
+ <button id="copyDiagnosis" class="button" onclick="copyDiagnosisToClipboard()">Copy Diagnosis Result</button>
  <!-- <button id="Next" class="button" onclick="location.href = 'https://www.color-blind-test.com/contact.html';">Exit</button> -->
 
  <h2></h2>
@@ -226,7 +227,8 @@ span.b2 {
   <div><p style="text-align:center;"><span  id="span1" class="b1">RED</span> <span id="span2" class="b2">GREEN</span> <span id="span3" class="b3">BLUE</span> </p></div> 
 </canvas>  
 </div>
-<p style="text-align: center">If you are color blind, Colorlite glasses will significantly improve your color vision.<br>95% of our patients pass the Ishihara color vision test book with our correction glasses.<br> Visit one of our affiliate Eye Care Professionals for a personalized diagnostic test and get a custom prescription for color correction lenses.</p>
+<p style="text-align: center">Code from https://www.color-blind-test.com/</p>
+<!-- <p style="text-align: center">If you are color blind, Colorlite glasses will significantly improve your color vision.<br>95% of our patients pass the Ishihara color vision test book with our correction glasses.<br> Visit one of our affiliate Eye Care Professionals for a personalized diagnostic test and get a custom prescription for color correction lenses.</p> -->
  <!-- <p style="text-align: center"><a class="myButton" href="https://www.color-blind-test.com/contact.html">CONTACT</a></p>   -->
 <script>
 var elozo = 10;
@@ -271,7 +273,7 @@ window.onload = function() {
 	ctx.stroke();	
   }
 }
-
+var diagnozis="";
 function Rajzol() {
  var seged=0;
  var sorrend=[];
@@ -452,7 +454,22 @@ ctx.restore();
 document.getElementById("p").innerHTML = diagnozis + "<b>Errors: " + score + ", Unused caps: "+ uresek+ "</b><br><br>Colorlite glasses will significantly improve your color vision.<br>Visit one of our affiliate Eye Care Professionals for a personalized diagnostic test and get a custom prescription for color correction lenses.";
 
 } //Rajzol end
-
+// 新增复制函数
+function copyDiagnosisToClipboard() {
+    if (diagnozis) {
+        // 创建一个临时的 textarea 元素
+        const textarea = document.createElement('textarea');
+        textarea.value = diagnozis;
+        document.body.appendChild(textarea);
+        textarea.select();
+        // 执行复制操作
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        alert('Copyed');
+    } else {
+        alert('Blank! Please complete the test first.');
+    }
+}
 function szamrajzol(){
 var koordszam= [[47,190],[78,135],[115,95],[165,70],[210,65],[265,73],[327,100],[370,153],[380,243],[363,323],[322,365],[274,390],[220,395],[160,382],[109,352],[65,285]];
   ctx.font = "20px Verdana";
