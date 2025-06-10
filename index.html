@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> D15 Color Blind Test - Colorlite</title>
+<!-- <link href="/images/favicon21.png" rel="shortcut icon" type="image/vnd.microsoft.icon"> -->
+<meta name="title" content="D15 color blindness test | D15 Color vision test">
+<meta name="description" content="The D15 color blind test help you to diagnose the type and grade of color vision deficiency.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.myButton {
+box-shadow:inset 0px 39px 7px -24px #e67a73;
+background-color:#d1190c;
+border-radius:6px;
+border:1px solid #ffffff;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:20px;
+padding:9px 30px;
+text-decoration:none;
+text-shadow:1px 1px 0px #382524;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-right: 10px;
+margin-left: 10px;
+min-width: 200px;
+}
+.myButton:hover {
+background-color:#f03c05;
+}
+.myButton:active {
+position:relative;
+top:1px;
+} 
+.enjoy-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 10px;
+  padding: 10px 0px 10px 0px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  font: normal 14px/1.5 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: white;
+  -webkit-box-shadow: 4px 4px 6px 1px rgba(0,0,0,0.4) ;
+  box-shadow: 4px 4px 6px 1px rgba(0,0,0,0.4) ;
+}
+
+div {
+    float:middle;
+}
+
+.container  {
+    height:50px;
+    width: 1030px;
+    margin: 0;
+}
+
+p {color:black;}
+
+.elem1  {
+    float:left;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    margin: 1px;
+    background:white;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: Black;
+  background-color: RGB(240,240,240);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: White}
+
+.button:active {
+  background-color: #3e8e41;;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.divcenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span.b1 {
+  display: inline-block;
+  width: 90px;
+  height: 100px;
+  padding: 5px;
+  background-image: linear-gradient( white 95%, red,red);
+}
+
+span.b2 {
+  display: inline-block;
+  width: 90px;
+  height: 100px;
+  padding: 5px;
+  background-image: linear-gradient( white 95%, green,green);
+}
+
+ span.b3 {
+  display: inline-block;
+  width: 90px;
+  height: 100px;
+  padding: 5px;
+  background-image: linear-gradient( white 95%, BLUE);
+}
+
+
+ 
+	
+	
+	 @media only screen and (max-width: 768px) {
+   .enjoy-css {    
+        padding: 10px 0px 10px 0px; }
+  
+    .container {
+      height: 50px;
+       width: 100%; 
+      padding: 2px; 
+    }
+
+   .elem1 {
+      float: left;
+      width: 4%;
+      height: 40px;
+      border-radius: 10px;
+      border: 2px solid lightgray;
+      margin: 1px;
+      background: white;
+	   
+	   
+	   
+   }
+ }
+
+	
+
+</style>
+</head>
+<body style="color: #F10F13;">
+
+<div class="enjoy-css" style="background-color: RGB(250,250,250); text-align: center">  
+   <h2>D15 color blindness test</h2>
+   <p id="p">1. Arrange the colors!<br>2. To choose a color, tap it on the upper line!<br>3. Then tap on the position of the bottom line to put them there!<br>4. Once color scale is completed, push the 'READY' button!<br>5. You can change the order by putting back the color to a white position!</p>
+   <!-- <p><a class="myButton" href="https://www.color-blind-test.com/contact.html">CONTACT</a><p/> -->
+   <p id="p2" style="color:rgb(64, 64, 90)"></p>
+</div>
+
+<div class="enjoy-css" style="background-color: lightgray; text-align: center">  
+<div align="center" class="divcenter">
+ <div class="container">
+  <div id="elem1" class="elem1" style="background:lightgray;"></div>
+    
+  <div id="elem2" class="elem1" onclick="put(2)" style="background:rgb(108,129,100);"></div>
+  <div id="elem3" class="elem1" onclick="put(3)" style="background:rgb(59,134,144);"></div>
+  <div id="elem4" class="elem1" onclick="put(4)" style="background:rgb(143,111,164);"></div>
+  <div id="elem5" class="elem1" onclick="put(5)" style="background:rgb(144,118,96);"></div>
+  <div id="elem6" class="elem1" onclick="put(6)" style="background:rgb(88,132,115);"></div>
+  <div id="elem7" class="elem1" onclick="put(7)" style="background:rgb(156,109,137);"></div>
+  <div id="elem8" class="elem1" onclick="put(8)" style="background:rgb(57,133,156);"></div>
+  <div id="elem9" class="elem1" onclick="put(9)" style="background:rgb(159,109,124);"></div>
+  <div id="elem10" class="elem1" onclick="put(10)" style="background:rgb(128,115,178);"></div>
+  <div id="elem11" class="elem1" onclick="put(11)" style="background:rgb(59,132,167);"></div>
+  <div id="elem12" class="elem1" onclick="put(12)" style="background:rgb(146,112,153);"></div>
+  <div id="elem13" class="elem1" onclick="put(13)" style="background:rgb(131,123,93);"></div>
+  <div id="elem14" class="elem1" onclick="put(14)" style="background:rgb(53,131,180);"></div>
+  <div id="elem15" class="elem1" onclick="put(15)" style="background:rgb(63,135,130);"></div>
+  <div id="elem16" class="elem1" onclick="put(16)" style="background:rgb(158,110,111);"></div> 
+ </div>
+ 
+ <div class="container"> </div>
+ 
+ <div class="container">
+  <div id="elem17" class="elem1" style="background:rgb(55,129,193);"></div>
+  <div id="elem18" class="elem1" onclick="put(18)" style="background:white"></div>  
+  <div id="elem19" class="elem1" onclick="put(19)" style="background:white;"></div>
+  <div id="elem20" class="elem1" onclick="put(20)" style="background:white;"></div>
+  <div id="elem21" class="elem1" onclick="put(21)" style="background:white;"></div>
+  <div id="elem22" class="elem1" onclick="put(22)" style="background:white;"></div>
+  <div id="elem23" class="elem1" onclick="put(23)" style="background:white;"></div>
+  <div id="elem24" class="elem1" onclick="put(24)" style="background:white;"></div>
+  <div id="elem25" class="elem1" onclick="put(25)" style="background:white;"></div>
+  <div id="elem26" class="elem1" onclick="put(26)" style="background:white;"></div>
+  <div id="elem27" class="elem1" onclick="put(27)" style="background:white;"></div>
+  <div id="elem28" class="elem1" onclick="put(28)" style="background:white;"></div>
+  <div id="elem29" class="elem1" onclick="put(29)" style="background:white;"></div>
+  <div id="elem30" class="elem1" onclick="put(30)" style="background:white;"></div>
+  <div id="elem31" class="elem1" onclick="put(31)" style="background:white;"></div>
+  <div id="elem32" class="elem1" onclick="put(32)" style="background:white;"></div>
+ </div>
+
+ <div class="container"> </div>
+ <button id="Next" class="button" onclick="Rajzol()">READY!</button>
+ <!-- <button id="Next" class="button" onclick="location.href = 'https://www.color-blind-test.com/contact.html';">Exit</button> -->
+
+ <h2></h2>
+
+</div>
+</div>
+
+<div class="enjoy-css" style="background-color: white; text-align: center"> 
+  <canvas id="myCanvas" width="400" height="400" style="border:0px solid #d3d3d3; "> </canvas> 
+  <p id="error" style="text-align:center;" >Errors in the receptors</p> 
+  <div><p style="text-align:center;"><span  id="span1" class="b1">RED</span> <span id="span2" class="b2">GREEN</span> <span id="span3" class="b3">BLUE</span> </p></div> 
+</canvas>  
+</div>
+<p style="text-align: center">If you are color blind, Colorlite glasses will significantly improve your color vision.<br>95% of our patients pass the Ishihara color vision test book with our correction glasses.<br> Visit one of our affiliate Eye Care Professionals for a personalized diagnostic test and get a custom prescription for color correction lenses.</p>
+ <!-- <p style="text-align: center"><a class="myButton" href="https://www.color-blind-test.com/contact.html">CONTACT</a></p>   -->
+<script>
+var elozo = 10;
+var kordinatak=[64,187,143,157,226,129,290,110,361,97,433,109,508,145,568,218,589,349,560,451,504,524,442,552,376,551,296,522,229,483,164,421];
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var img = document.getElementById("D15");
+var szinjo = ["rgb(53, 131, 180)","rgb(59, 132, 167)","rgb(57, 133, 156)","rgb(59, 134, 144)","rgb(63, 135, 130)","rgb(88, 132, 115)","rgb(108, 129, 100)","rgb(131, 123, 93)","rgb(144, 118, 96)","rgb(158, 110, 111)","rgb(159, 109, 124)","rgb(156, 109, 137)","rgb(146, 112, 153)","rgb(143, 111, 164)","rgb(128, 115, 178)"];
+var koord= [[70,190],[95,142],[130,106],[178,81],[213,75],[262,81],[322,105],[360,153],[372,238],[359,310],[323,346],[274,370],[238,370],[179,357],[142,337],[94,285]];
+var score=15;
+var num = 18;
+var kontakt="CONTACT!"; 
+var diagnozis="";
+var osszeg=0;
+var radatlag=0.0;
+var hossz=0.0;
+var kepernyosize=1;
+
+if (window.innerWidth <760){ c.width = "320"; c.height = "330";kepernyosize=320/400;}
+      else {c.width = "400"; c.height = "400";kepernyosize=1;}
+
+window.onload = function() {
+
+ ctx.beginPath();
+ ctx.stroke();
+ var koordszam= [[47,190],[78,135],[115,95],[165,70],[210,65],[265,73],[327,100],[370,153],[380,243],[363,323],[322,365],[274,390],[220,395],[160,382],[109,352],[65,285]];
+  ctx.font = "20px Verdana";
+  for(i=0; i<koordszam.length; i++){
+    ctx.fillStyle = "Black";
+	if (window.matchMedia("(max-width: 480px)").matches) { 
+	ctx.fillText(i,1.13*(koord[i][0]*kepernyosize)-30,1.15*(koord[i][1]*kepernyosize)-20);
+	} else {
+	ctx.fillText(i,1.11*(koord[i][0]*kepernyosize)-30,1.13*(koord[i][1]*kepernyosize)-20);
+	}
+	ctx.beginPath();
+	ctx.arc(koord[i][0]*kepernyosize,koord[i][1]*kepernyosize, 3, 0, Math.PI * 2);
+    ctx.fillStyle = "White"; // Fehér belso
+	ctx.fill();
+	ctx.setLineDash([]);
+	ctx.strokeStyle = "black"; // Fekete körvonal
+	ctx.lineWidth = 2;
+	ctx.stroke();	
+  }
+}
+
+function Rajzol() {
+ var seged=0;
+ var sorrend=[];
+ var hibak=[];
+ var tesztsorrend=[0,1,2,3,4,5,6,7,15,8,14,9,10,13,12,11];
+ var meredeksegek=[];
+ var trit=0;
+ var prot=0;
+ var deut=0;
+ var sulyozottAtlag=0;
+ var hosszak=[];
+ var protlength=0;
+ var deutlength=0;
+ var tritlength=0;
+ var cvdszint="";
+ var tipus="";
+ var uresek=0;
+ osszeg=0;
+ hossz=0;
+ num=18;
+
+ctx.clearRect(0, 0, c.width, c.height);
+
+if(sorrend.length>0){ sorrend.length=0;
+ meredekseg.length=0;
+ hossz=0;
+ hibak.length=0;
+}
+
+ctx.beginPath();
+ctx.moveTo(koord[0][0]*kepernyosize,koord[0][1]*kepernyosize);
+
+   sorrend.push(0);
+    for (j=0; j < 15; j++) {  
+       num = 18+j;  
+       if ( document.getElementById("elem"+num.toString()).style.background=="white" ){uresek++;}
+     for (i=0; i < 15; i++) {     
+	    if( document.getElementById("elem"+num.toString()).style.background==szinjo[i]) {
+                sorrend.push(i+1); //uj
+      if(num==18+i) {score=score-1}
+                ctx.lineTo(koord[i+1][0]*kepernyosize,koord[i+1][1]*kepernyosize);
+        }
+      }
+     }
+
+  for (i=1; i < 16; i++) {     
+   if(Math.abs(sorrend[i]-sorrend[i-1])>=2){ //csak a 1 nÃ©l nagyobb tÃ¡volsÃ¡gÃº hibÃ¡kakt vesszÃ¼k figyelembe
+     hibak.push(sorrend[i-1]);
+     hibak.push(sorrend[i]);}
+  }
+
+  for (i=1; i < hibak.length; i+=2) {
+    dx=koord[ hibak[i] ] [ 0 ] - koord[ hibak[i-1] ] [ 0 ];     
+    dy=koord[ hibak[i] ] [ 1 ] - koord[ hibak[i-1] ] [ 1 ];     
+
+    meredeksegek.push(Math.atan(dy/dx)); 
+    hosszak.push(Math.sqrt(dx*dx+dy*dy));  
+    hossz+=Math.sqrt(dx*dx+dy*dy);
+  }
+
+console.log(sorrend);
+console.log(meredeksegek);
+console.log(hosszak);
+console.log(hibak);
+
+meredeksegek.forEach(function Osszeg(value){
+seged= (value < 0) ? Math.PI+value : value;
+osszeg += seged;})
+
+if (meredeksegek.length !== 0) {radatlag= osszeg / meredeksegek.length;}
+
+  for (i=0; i < meredeksegek.length; i++) {
+   seged= (meredeksegek[i] < 0) ? Math.PI+meredeksegek[i] : meredeksegek[i];
+   if(seged<1.54){prot++ ; protlength+=hosszak[i]; }
+    else if(seged<2.6){deut++; deutlength+=hosszak[i]; }
+     else {trit++; tritlength+=hosszak[i];} 
+  }
+
+console.log(protlength);
+console.log(deutlength);
+console.log(tritlength);
+  
+// document.getElementById("p2").innerHTML = "Sum of incorrect line lengths: " + Math.round(hossz)+ "<br>Azimuth: " + Math.round((180 / Math.PI)*radatlag)+"<br>Protan error: " + Math.round(protlength) + "<br>Deutan error: " + Math.round(deutlength) + "<br>Tritan error: " + Math.round(tritlength)  + "<br>Cap order: ["+sorrend +"]";
+   if (hossz !== 0) {
+   document.getElementById("span1").style.backgroundImage="linear-gradient( white "+(98-(protlength)/(hossz)*100)+"%, red,red)";
+   document.getElementById("span2").style.backgroundImage="linear-gradient( white "+(98-(deutlength)/(hossz)*100)+"%, green,green)";
+   document.getElementById("span3").style.backgroundImage="linear-gradient( white "+(98-(tritlength)/(hossz)*100)+"%, blue,blue)";
+   document.getElementById("span1").innerHTML="RED " + Math.round((protlength)/(hossz)*100)+"%";
+   document.getElementById("span2").innerHTML="GREEN " + Math.round((deutlength)/(hossz)*100)+"%";
+   document.getElementById("span3").innerHTML="BLUE " + Math.round((tritlength)/(hossz)*100)+"%";
+   } else {
+   document.getElementById("span1").innerHTML="RED " + "0%";
+   document.getElementById("span2").innerHTML="GREEN " + "0%";
+   document.getElementById("span3").innerHTML="BLUE " + "0%";
+   } 
+score=meredeksegek.length;
+
+if (score==2 && hossz<250) {
+  if(uresek==0 && hossz<250){ diagnozis="<b>DIAGNOSIS: NORMAL RESULT WITH MINOR ERROR </b><br><br>"; }
+  else if(uresek==1){ diagnozis="<b>DIAGNOSIS: NON-SPECIFIC COLOR VISION DEFICIENCY - MILD </b><br><br>"; }
+  else if(uresek==2){ diagnozis="<b>DIAGNOSIS: NON-SPECIFIC COLOR VISION DEFICIENCY - MODERATE </b><br><br>"; }
+  else if(uresek>2){ diagnozis="<b>DIAGNOSIS: NON-SPECIFIC COLOR VISION DEFICIENCY - SEVERE </b><br><br>"; }
+ }
+else if (score<2 && hossz<250) {
+  if(uresek==0){ diagnozis="<b>DIAGNOSIS: NORMAL RESULT</b><br><br>"; }
+  else if(uresek==1){ diagnozis="<b>DIAGNOSIS: NON-SPECIFIC COLOR VISION DEFICIENCY - MILD</b><br><br>"; }
+  else if(uresek==2){ diagnozis="<b>DIAGNOSIS: NON-SPECIFIC COLOR VISION DEFICIENCY - MODERATE</b><br><br>"; }
+  else if(uresek>2){ diagnozis="<b>DIAGNOSIS: NON-SPECIFIC COLOR VISION DEFICIENCY - SEVERE</b><br><br>"; }
+}
+else if( (0.94*deutlength) > (protlength) && (deutlength) > (tritlength) ){
+   tipus="DEUTAN";
+  if(deutlength<700 && uresek<2){cvdszint="MILD"}
+   else if(deutlength<1100 && uresek<3){cvdszint="MODERATE"}
+    else {cvdszint="SEVERE"}
+    diagnozis="<b>DIAGNOSIS: COLOR VISION DEFICIENCY - " + cvdszint + " " + tipus + "</b><br><br>";
+}
+else if( (protlength) > (0.94*deutlength) && (protlength) > (tritlength) ){  
+  tipus="PROTAN";
+  if(protlength<700 && uresek<2){cvdszint="MILD"}
+   else if(protlength<1100 && uresek<3){cvdszint="MODERATE"}
+    else {cvdszint="SEVERE"}
+    diagnozis="<b>DIAGNOSIS: COLOR VISION DEFICIENCY - " + cvdszint + " " + tipus + "</b><br><br>";
+}
+else if( (tritlength) > (deutlength) && (tritlength) > (protlength) ){
+  tipus="TRITAN";
+  if(tritlength<700 && uresek<2){cvdszint="MILD"}
+   else if(tritlength<1100 && uresek<2){cvdszint="MODERATE"}
+    else {cvdszint="SEVERE"}
+    diagnozis="<b>DIAGNOSIS: COLOR VISION DEFICIENCY - " + cvdszint + " " + tipus + "</b><br><br>";
+}
+
+ctx.lineWidth = 2;
+ctx.strokeStyle="black";
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(0+200*kepernyosize,0+200*kepernyosize);   
+ctx.lineTo((200+200)*kepernyosize,(200*Math.tan(radatlag)+200)*kepernyosize);
+ctx.lineWidth = 3;
+ctx.setLineDash([5, 5]);
+ctx.strokeStyle="grey";
+ctx.stroke();
+
+szamrajzol();
+
+//prot confusion line 
+ctx.beginPath();
+ctx.setLineDash([]);
+ctx.moveTo(140*kepernyosize,60*kepernyosize);   
+ctx.lineTo(210*kepernyosize,400*kepernyosize);
+ctx.lineWidth = 4;
+ctx.strokeStyle="red";
+ctx.stroke();
+//deut confusion line 
+ctx.beginPath();
+ctx.moveTo(195*kepernyosize,60*kepernyosize);   
+ctx.lineTo(155*kepernyosize,375*kepernyosize);
+ctx.lineWidth = 4;
+ctx.strokeStyle="green";
+ctx.stroke();
+//trit confusion line 
+ctx.beginPath();
+ctx.moveTo(94*kepernyosize,285*kepernyosize);   
+ctx.lineTo(380*kepernyosize,180*kepernyosize);
+ctx.lineWidth = 4;
+ctx.strokeStyle="blue";
+ctx.stroke();
+  
+ctx.save();
+ctx.fillStyle ="grey"
+ctx.translate(200,200);
+ctx.rotate(radatlag);
+ctx.fillText("",10,-10);
+ctx.restore();
+
+
+
+document.getElementById("p").innerHTML = diagnozis + "<b>Errors: " + score + ", Unused caps: "+ uresek+ "</b><br><br>Colorlite glasses will significantly improve your color vision.<br>Visit one of our affiliate Eye Care Professionals for a personalized diagnostic test and get a custom prescription for color correction lenses.";
+
+} //Rajzol end
+
+function szamrajzol(){
+var koordszam= [[47,190],[78,135],[115,95],[165,70],[210,65],[265,73],[327,100],[370,153],[380,243],[363,323],[322,365],[274,390],[220,395],[160,382],[109,352],[65,285]];
+  ctx.font = "20px Verdana";
+  for(i=0; i<koordszam.length; i++){
+    ctx.fillStyle = "Black";
+	if (window.matchMedia("(max-width: 480px)").matches) { 
+	ctx.fillText(i,1.13*(koord[i][0]*kepernyosize)-30,1.15*(koord[i][1]*kepernyosize)-20);
+	} else {
+	ctx.fillText(i,1.11*(koord[i][0]*kepernyosize)-30,1.13*(koord[i][1]*kepernyosize)-20);
+	}
+	ctx.beginPath();
+	ctx.arc(koord[i][0]*kepernyosize,koord[i][1]*kepernyosize, 3, 0, Math.PI * 2);
+    ctx.fillStyle = "White"; // Fehér belso
+	ctx.fill();
+	ctx.setLineDash([]);
+	ctx.strokeStyle = "black"; // Fekete körvonal
+	ctx.lineWidth = 2;
+	ctx.stroke();	
+  }
+
+}
+
+function put(k) {
+  
+ if(k!==elozo){
+    document.getElementById("elem"+k).style.border="2px solid black";
+    document.getElementById("elem"+elozo).style.border="2px solid lightgray"; 
+ }
+
+ if(k==elozo){
+    document.getElementById("elem"+k).style.border="2px solid lightgray";
+ }
+
+ if(document.getElementById("elem"+k).style.background=="white"){
+  document.getElementById("elem"+k).style.background=document.getElementById("elem"+elozo).style.background;
+  document.getElementById("elem"+elozo).style.background="white";
+  document.getElementById("elem"+elozo).style.border="2px solid lightgray";
+
+  document.getElementById("elem"+k).innerHTML=document.getElementById("elem"+elozo).innerHTML;
+  document.getElementById("elem"+elozo).innerHTML="";
+
+   }
+elozo=k;
+}
+
+</script>
+
+</body></html>
